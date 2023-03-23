@@ -9,7 +9,7 @@ import { RegisterComponent } from './register/register.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: PARENT_PATHS.DEFAULT, redirectTo: PATHS.AUTH.LOGIN },
+  { path: PARENT_PATHS.DEFAULT, redirectTo: PATHS.AUTH.LOGIN, pathMatch:'full' },
   { path: PATHS.AUTH.LOGIN, component: LoginComponent },
   { path: PATHS.AUTH.REGISTER, component: RegisterComponent },
   { path: PATHS.AUTH.FORGOT_PASSWORD, component: ForgotPasswordComponent },
